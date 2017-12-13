@@ -1,4 +1,46 @@
 /* Los estilos de tu proyecto */
+:root {
+  --main-color: #f7b617;
+}
+
 body {
   font-family: 'Lato', sans-serif;
+}
+
+/* h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+} */
+
+/* Rewrite styles */
+.navbar {
+  background-color: #ffffff;
+}
+
+.navbar-brand {
+  width: 210px;
+  height: auto;
+  text-align: center;
+  padding: 40px;
+}
+
+.navbar-brand img {
+  width: 100%;
+}
+
+[class*='h'] {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Helpers */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.section-call {
+  padding: 40px;
+  background-color: var(--main-color);
+  color: #fff;
 }
