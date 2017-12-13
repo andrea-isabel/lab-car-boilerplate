@@ -7,14 +7,17 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-/* h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-} */
-
+/* Site styles */
+#section-1 {
+  background-image: url('../assets/images/taxi.jpg');
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 /* Rewrite styles */
 .navbar {
   background-color: #ffffff;
+  margin: 0;
 }
 
 .navbar-brand {
@@ -41,6 +44,19 @@ body {
 
 .section-call {
   padding: 40px;
+  margin-top: 150px;
+  margin-bottom: 150px;
   background-color: var(--main-color);
   color: #fff;
+}
+
+@media (min-width: 768px) {
+
+
+  .navbar-nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
 }
