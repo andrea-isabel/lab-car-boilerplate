@@ -11,6 +11,10 @@ figure img {
   width: 100%;
 }
 
+p {
+  font-size: 1.25em;
+}
+
 /* Rewrite styles */
 .navbar {
   background-color: #fff;
@@ -29,10 +33,14 @@ figure img {
   width: 100%;
 }
 
-[class*='h'] {
+[class^='h'] {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   margin: 0;
+}
+
+.h3 {
+  font-size: 21px;
 }
 
 .btn {
@@ -48,11 +56,12 @@ figure img {
   color: var(--dark-grey);
 }
 
-/* Helpers */
-.text-uppercase {
-  text-transform: uppercase;
+.btn-secondary {
+  background-color: var(--main-color);
+  color: #fff;
 }
 
+/* Helpers */
 .section-call {
   padding: 40px;
   margin-top: 150px;
@@ -61,8 +70,12 @@ figure img {
   color: #fff;
 }
 
-.white-border {
+.border-white {
   border: 1px solid #fff;
+}
+
+.text-white {
+  color: #fff;
 }
 
 .padding-40 {
@@ -109,14 +122,25 @@ figure img {
   margin-bottom: 40px;
 }
 
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-200 {
+  margin-bottom: 200px;
+}
+
 .pad-40 {
+  padding: 40px;
+}
+
+.pad-40-v {
   padding: 40px 0;
 }
 
 /* Site styles */
 section:nth-child(2n) {
   background-color: var(--main-color);
-  color: #fff;
 }
 
 #section-1 {
@@ -124,6 +148,22 @@ section:nth-child(2n) {
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#section-3 {
+  background-image: url('../assets/images/conduce.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#section-3 article {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+}
+
+#section-3 article button {
+  margin-bottom: 160px;
 }
 
 footer {
