@@ -1,23 +1,21 @@
-/* Los estilos de tu proyecto */
 :root {
   --main-color: #f7b617;
+  --dark-grey: #2b2b2b;
 }
 
 body {
   font-family: 'Lato', sans-serif;
 }
 
-/* Site styles */
-#section-1 {
-  background-image: url('../assets/images/taxi.jpg');
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+figure img {
+  width: 100%;
 }
+
 /* Rewrite styles */
 .navbar {
-  background-color: #ffffff;
+  background-color: #fff;
   margin: 0;
+  color: var(--dark-grey);
 }
 
 .navbar-brand {
@@ -37,6 +35,19 @@ body {
   margin: 0;
 }
 
+.btn {
+  display: block;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 1.25em;
+}
+
+.btn-default {
+  color: var(--dark-grey);
+}
+
 /* Helpers */
 .text-uppercase {
   text-transform: uppercase;
@@ -50,9 +61,76 @@ body {
   color: #fff;
 }
 
+.white-border {
+  border: 1px solid #fff;
+}
+
+.padding-40 {
+  padding: 40px 15px;  
+}
+
+.inline-logo-mobile {
+  display: inline-block;
+  width: 70px;
+  margin: 0 15px;
+}
+
+.inline-logo-desktop {
+  display: inline-block;
+  width: 95px;
+  margin: 0 20px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.pad-40 {
+  padding: 40px 0;
+}
+
+/* Site styles */
+section:nth-child(2n) {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+#section-1 {
+  background-image: url('../assets/images/taxi.jpg');
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  background-color: var(--dark-grey);
+}
+
 @media (min-width: 768px) {
-
-
   .navbar-nav {
     position: absolute;
     top: 50%;

@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:400,600" rel="stylesheet">
   <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <title>Lab&lt;ar</title>
+  <title>LabCar</title>
 </head>
 
 <body>
@@ -42,33 +42,40 @@
     <section id="section-1" class="container-fluid">
       <div class="row">
         <article class="col-xs-10 col-xs-offset-2 col-sm-5 col-sm-offset-7 section-call">
-          <div class="hidden-xs">        
+          <!-- Contenido visible en mobile -->
+          <div class="visible-xs">
+              <span class="h1">Comienza a viajar con <img class="inline-logo-mobile" src="assets/images/logoBlanco.png" alt="Logo LabCar blanco"></span>
+              <button type="button" class="btn btn-default mt-40">Descarga el app</button>
+            </div>
+            <!-- Contenido visible en escritorio -->
+            <div class="hidden-xs">        
             <h2 class="h2">Disfruta del viaje</h2>
             <h2 class="h2">Eres dueño de tu tiempo</h2>
-            <h3>Viaja con <img src="assets/images/logoBlanco.png" alt="Logo LabCar blanco"></h3>
-            <button class="text-uppercase" type="button">regístrate</button>
+            <h3>Viaja con <img class="inline-logo-desktop" src="assets/images/logoBlanco.png" alt="Logo LabCar blanco"></h3>
+            <button type="button" class="btn btn-default text-uppercase">Regístrate</button>
             <span>O bien</span>
-            <button type="button">Conviértete en un conductor</button>
-          </div>
-
-          <div class="visible-xs">
-            <h2 class="h2">Comienza a viajar con <img src="assets/images/logoBlanco.png" alt="Logo LabCar blanco"></h2>
-            <!-- Standard button -->
-            <button type="button" class="btn btn-default">Descarga el app</button>
+            <button type="button" class="btn btn-default">Conviértete en un conductor</button>
           </div>
         </article>
       </div>
     </section>
 
     <section id="section-2" class="container-fluid">
-      <article>
-        <figure><img src="assets/images/iPhone6Plus.png" alt="iPhone LabCar"></figure>
-        <div>
-          <h3>Descarga la nueva app</h3>
-          <p>La versió actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
-          <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
-        </div>
-      </article>
+      <div class="row m-0">
+        <article class="row white-border mt-40 mb-40 pad-40">
+          <!-- Texto visible en solo móvil -->
+          <h3 class="visible-xs h3 text-center mt-15 mb-15">La nueva app</h3>
+          <!-- Imagen celular -->
+          <figure class="col-xs-8 col-xs-offset-2"><img src="assets/images/iPhone6Plus.png" alt="iPhone LabCar"></figure>
+          <!-- Texto visible solo en desktop -->
+          <div class="hidden-xs">
+            <h3>Descarga la nueva app</h3>
+            <p>La versió actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+            <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
+          </div>
+        </article>
+        <h4 class="h4 mb-10">Llega a tu destino aún más rápido</h4> 
+      </div>
     </section>
 
     <section>
