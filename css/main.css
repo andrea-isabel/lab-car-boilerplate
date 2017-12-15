@@ -67,6 +67,10 @@ p {
   color: #fff;
 }
 
+.form-group {
+  margin-bottom: 30px;
+}
+
 /* Helpers */
 .section-call {
   padding: 40px;
@@ -88,16 +92,16 @@ p {
   padding: 40px 15px;  
 }
 
-.inline-logo-mobile {
+.inline-logo {
   display: inline-block;
   width: 70px;
   margin: 0 15px;
 }
 
-.inline-logo-desktop {
+.logo-footer {
   display: inline-block;
-  width: 95px;
-  margin: 0 20px;
+  width: 130px;
+  margin-top: 12px;
 }
 
 .m-0 {
@@ -124,8 +128,8 @@ p {
   margin-top: 25px;
 }
 
-.mb-25 {
-  margin-bottom: 25px;
+.mb-30 {
+  margin-bottom: 30px;
 }
 
 .mt-40 {
@@ -149,7 +153,8 @@ p {
 }
 
 .pad-40-v {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .relative {
@@ -217,6 +222,11 @@ footer {
     padding: 10px 30px;
   }
 
+  .inline-logo {
+    width: 95px;
+    margin: 0 20px;
+  }
+
   #section-2 {
     padding-left: 0;
   }
@@ -232,7 +242,10 @@ footer {
   }
 
   #section-2 p {
-    font-size: 1.7em;
-    word-spacing: .11em;
+    font-size: 1.55em;
+  }
+
+  .logo-footer {
+    margin-top: 80px;
   }
 }

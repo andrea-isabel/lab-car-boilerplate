@@ -44,14 +44,14 @@
         <article class="col-xs-10 col-xs-offset-2 col-sm-5 col-sm-offset-7 section-call">
           <!-- Contenido visible en mobile -->
           <div class="visible-xs">
-            <span class="h1">Comienza a viajar con <img class="inline-logo-mobile" src="assets/images/logoBlanco.png" alt="Logo LabCar blanco"></span>
+            <span class="h1">Comienza a viajar con <img class="inline-logo" src="assets/images/logoBlanco.png" alt="Logo LabCar blanco"></span>
             <button type="button" class="btn btn-default mt-40">Descarga el app</button>
           </div>
             <!-- Contenido visible en escritorio -->
           <div class="hidden-xs relative">        
             <h2 class="h1">Disfruta del viaje</h2>
             <h2 class="h1">Eres dueño de tu tiempo</h2>
-            <h3 class="h3 mt-40">Viaja con <img class="inline-logo-desktop" src="assets/images/logoBlanco.png" alt="Logo LabCar blanco"></h3>
+            <h3 class="h3 mt-40">Viaja con <img class="inline-logo" src="assets/images/logoBlanco.png" alt="Logo LabCar blanco"></h3>
             <button type="button" class="btn btn-default text-uppercase mt-15 mb-40">Regístrate</button>
             <!-- <span>O bien</span> -->
             <hr class="separate-buttons">
@@ -70,8 +70,8 @@
           <figure class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-1"><img src="assets/images/iPhone6Plus.png" alt="iPhone LabCar"></figure>
           <!-- Texto visible solo en desktop -->
           <div class="hidden-xs col-sm-4 col-sm-offset-1 pad-40-v">
-            <h2 class="h2 mb-25">Descarga la nueva app</h2>
-            <p class="mb-25">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+            <h2 class="h2 mb-30">Descarga la nueva app</h2>
+            <p class="mb-30">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
             <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
           </div>
         </article>
@@ -90,24 +90,34 @@
     </section>
 
     <section class="container-fluid text-white">
-      <h3>Tarifas</h3>
-      <p>Consulta las tarifas LabCar aquí</p>
-      <form action="">
-        <label for="pickup-location"><span>Icono</span></label>
-        <input type="text" id="pickup-location" placeholder="Ingrese su punto de partida">
-        <label for="destination"><span>Icono</span></label>
-        <input type="text" id="destination" placeholder="Ingrese su destino">
-        <button class="text-uppercase" type="input">¡Trazar ruta!</button>
-      </form>
+      <!-- <div class="row"> -->
+        <article class="col-xs-12 pad-40-v">
+          <h3 class="h3 mt-60 mb-30">Tarifas</h3>
+          <p class="mb-40">Consulta las tarifas LabCar aquí</p>
+          <form action="" class="form-horizontal">
+            <div class="form-group">
+              <label for="pickup-location"><img src="assets/images/shape.png" alt="Pickup location"></label>
+              <input type="text" id="pickup-location" placeholder="Ingrese su punto de partida">
+            </div>
+            <div class="form-group">
+              <label for="destination"><img src="assets/images/shape2.png" alt="Destination"></label>
+              <input type="text" id="destination" placeholder="Ingrese su destino">
+            </div>
+            <div class="form-group">
+              <button type="button" class="btn btn-default text-uppercase">¡Trazar ruta!</button>
+            </div>
+          </form>
+        </article>
 
-      <div id="map">
-        <figure><img class="img-thumbnail" src="assets/images/google-maps.jpg" alt="Location map"></figure>        
-      </div>
+        <div id="map" class="col-xs-12">
+          <figure><img class="img-thumbnail" src="assets/images/google-maps.jpg" alt="Location map"></figure>        
+        </div>
+      <!-- </div> -->
     </section>
   </main>
 
   <footer class="container-fluid text-white">
-    <figure><img src="assets/images/logoBlanco.png" alt="Logo LabCar blanco"></figure>
+    <figure class="logo-footer"><img src="assets/images/logoBlanco.png" alt="Logo LabCar blanco"></figure>
     <hr>
     <nav>
       <ul>
