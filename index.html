@@ -7,40 +7,124 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:400,600" rel="stylesheet">
   <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
   <title>LabCar</title>
 </head>
 
 <body>
+
+  <!-- Modales -->
+
+  <!-- Modal Registrate -->
+  <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content modal-grey">
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                  <button type="submit" class="btn btn-dark form-control">Ya tienes una cuenta?</button>
+                </div>
+              <div class="form-group">
+                <label class="sr-only" for="username">Username</label>
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
+                  <input type="text" class="form-control" id="username" placeholder="Username">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="password">Password</label>
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
+                  <input type="password" class="form-control" id="password" aria-describedby="forgotPassword" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-secondary center-block text-uppercase">Log in</button>
+              </div>
+              <div class="form-group">
+                <span id="forgotPassword" class="help-block">Forgot password? <a href="#">Click here.</a></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Encabezado -->
   <header>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
+        <!-- Botones barra de navegación -->
         <div class="navbar-header">
+          <!-- Botón hamburguesa -->
           <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <!-- Logo -->
           <a class="navbar-brand mx-auto" href="#">
             <img src="assets/images/logoForma.png" alt="LabCar">
           </a>
         </div>
-
+        <!-- Lista barra de navegación -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="#">Viaja</a></li>
             <li><a href="#">Conduce</a></li>
-            <li><a href="#">Inicia sesión</a></li>
+            <li><a data-toggle="modal" href="#login">Inicia sesión</a></li>
           </ul>        
         </div>
       </div>
     </nav>
   </header>
+  <!-- Fin del encabezado -->
 
+  <!-- Modal inicia sesión -->
+  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <img src="assets/images/log-in.svg" alt="Login">
+        </div>
+        <div class="modal-body row">
+          <form class="form-horizontal col-sm-6 col-sm-offset-3">
+              <div class="form-group">
+                <label class="sr-only" for="username">Username</label>
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
+                  <input type="text" class="form-control" id="username" placeholder="Username">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="password">Password</label>
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
+                  <input type="password" class="form-control" id="password" aria-describedby="forgotPassword" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-secondary center-block text-uppercase">Log in</button>
+              </div>
+              <div class="form-group">
+                <span id="forgotPassword" class="help-block">Forgot password? <a href="#">Click here.</a></span>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin de modal -->
+
+  <!-- Contenido principal -->
   <main>
+    <!-- Primera sección -->
     <section id="section-1" class="container-fluid">
       <div class="row">
+        <!-- Call to action -->
         <article class="col-xs-10 col-xs-offset-2 col-sm-5 col-sm-offset-7 section-call">
           <!-- Contenido visible en mobile -->
           <div class="visible-xs">
@@ -52,7 +136,7 @@
             <h2 class="h1">Disfruta del viaje</h2>
             <h2 class="h1">Eres dueño de tu tiempo</h2>
             <h3 class="h3 mt-40">Viaja con <img class="inline-logo" src="assets/images/logoBlanco.png" alt="Logo LabCar blanco"></h3>
-            <button type="button" class="btn btn-default text-uppercase mt-15 mb-40">Regístrate</button>
+            <button type="button" class="btn btn-default text-uppercase mt-15 mb-40" data-toggle="modal" data-target="#register">Regístrate</button>
             <!-- <span>O bien</span> -->
             <hr class="separate-buttons">
             <button type="button" class="btn btn-default mt-40">Conviértete en un conductor</button>
@@ -61,9 +145,10 @@
       </div>
     </section>
 
+    <!-- Segunda sección -->
     <section id="section-2" class="container-fluid text-white">
       <div class="row m-0">
-        <article class="clearfix border-white mt-40 mb-40 pad-40-v col-xs-12 col-sm-11">
+        <article class="border-white mt-40 mb-40 pad-40-v col-xs-12 col-sm-11">
           <!-- Texto visible en solo móvil -->
           <h3 class="h3 visible-xs text-center mt-15 mb-15">La nueva app</h3>
           <!-- Imagen celular -->
@@ -75,12 +160,16 @@
             <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
           </div>
         </article>
+        <!-- Texto visible sólo en móvil -->
         <h4 class="h4 mb-10 visible-xs">Llega a tu destino aún más rápido</h4> 
       </div>
     </section>
+    <!-- Fin de la segunda sección -->
 
+    <!-- Tercera sección -->
     <section id="section-3" class="container-fluid text-white">
       <div class="row">
+        <!-- Cuadro oscuro con opacidad -->
         <article class="col-xs-12 col-sm-4 col-sm-offset-8 pad-40">
           <h3 class="h3 mt-60 mb-15">Conduce cuando quieras</h3>
           <p>LabCar es una opción flexible para que puedas alcanzar tus metas financieras.</p>
@@ -88,12 +177,15 @@
         </article>
       </div>
     </section>
+    <!-- Fin de la tercera sección -->
 
-    <section class="container-fluid text-white">
-      <!-- <div class="row"> -->
-        <article class="col-xs-12 pad-40-v">
+    <!-- Cuarta sección -->
+    <section id="section-4" class="container-fluid text-white">
+      <div class="row">
+        <article class="col-xs-12 col-sm-4 col-sm-offset-1 pad-40-v">
           <h3 class="h3 mt-60 mb-30">Tarifas</h3>
           <p class="mb-40">Consulta las tarifas LabCar aquí</p>
+          <!-- Formulario -->
           <form action="" class="form-horizontal">
             <div class="form-group">
               <label for="pickup-location"><img src="assets/images/shape.png" alt="Pickup location"></label>
@@ -104,68 +196,95 @@
               <input type="text" id="destination" placeholder="Ingrese su destino">
             </div>
             <div class="form-group">
-              <button type="button" class="btn btn-default text-uppercase">¡Trazar ruta!</button>
+              <button type="button" class="btn btn-default text-uppercase center-block">¡Trazar ruta!</button>
             </div>
           </form>
+          <!-- Fin de formulario -->
         </article>
 
-        <div id="map" class="col-xs-12">
-          <figure><img class="img-thumbnail" src="assets/images/google-maps.jpg" alt="Location map"></figure>        
+        <!-- Sección de mapa -->
+        <div id="map" class="col-xs-11 col-sm-5 col-sm-offset-1 pad-40-v">
+          <figure class="border-white"><img class="img-thumbnail" src="assets/images/google-maps.jpg" alt="Location map"></figure>        
         </div>
-      <!-- </div> -->
+        <!-- Fin de sección de mapa -->
+      </div>
     </section>
+    <!-- Fin de la cuarta sección -->
   </main>
+  <!-- Fin de contenido principal -->
 
+  <!-- Pie de página -->
   <footer class="container-fluid text-white">
-    <figure class="logo-footer"><img src="assets/images/logoBlanco.png" alt="Logo LabCar blanco"></figure>
-    <hr>
-    <nav>
-      <ul>
-        <li><a href="#">Fb</a></li>
-        <li><a href="#">Tw</a></li>
-        <li><a href="#">In</a></li>
-        <li><a href="#">App</a></li>
-        <li><a href="#">Play</a></li>
-      </ul>
-    </nav>
+    <div class="row">
+      <!-- Logo -->
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <figure class="logo-footer"><img src="assets/images/logoBlanco.png" alt="Logo LabCar blanco"></figure>
+        <hr>
+      </div>
+      <div class="row m-0">
+        <!-- Contenedor de navs -->
+        <div class="nav-container col-sm-10 col-sm-offset-1">
+          <!-- Lista de navegación -->
+          <nav class="list-group col-xs-6 col-sm-3 col-sm-push-3">
+            <ul class="list-unstyled">
+              <li class="list-group-item"><a href="#">Viaja</a></li>
+              <li class="list-group-item"><a href="#">Conduce</a></li>
+              <li class="list-group-item"><a href="#">Ciudades</a></li>
+              <li class="list-group-item"><a href="#">Ciudades</a></li>
+              <li class="list-group-item"><a href="#">Entregas</a></li>
+              <li class="list-group-item"><a href="#">Cómo funciona?</a></li>
+              <li class="list-group-item"><a href="#">Países</a></li>
+              <li class="list-group-item"><a href="#">Seguridad</a></li>
+            </ul>
+          </nav>
 
-    <nav>
-      <ul>
-        <li><a href="#">Viaja</a></li>
-        <li><a href="#">Conduce</a></li>
-        <li><a href="#">Ciudades</a></li>
-        <li><a href="#">Ciudades</a></li>
-        <li><a href="#">Entregas</a></li>
-        <li><a href="#">Cómo funciona?</a></li>
-        <li><a href="#">Países</a></li>
-        <li><a href="#">Seguridad</a></li>
-      </ul>
-    </nav>
+          <!-- Lista de navegación oculta para móvil -->
+          <nav class="list-group hidden-xs col-sm-3 col-sm-push-3">
+            <ul class="list-unstyled">
+              <li class="list-group-item"><a href="#">Oportunidades</a></li>
+              <li class="list-group-item"><a href="#">Nuestra historia</a></li>
+              <li class="list-group-item"><a href="#">API de LabCar</a></li>
+              <li class="list-group-item"><a href="#">Eventos</a></li>
+              <li class="list-group-item"><a href="#">Desarrolladores</a></li>
+              <li class="list-group-item"><a href="#">Servicios</a></li>
+              <li class="list-group-item"><a href="#">Laboratoria</a></li>
+              <li class="list-group-item"><a href="#">Coders</a></li>
+            </ul>
+          </nav>
 
-    <nav>
-      <ul>
-        <li><a href="#">Oportunidades</a></li>
-        <li><a href="#">Nuestra historia</a></li>
-        <li><a href="#">API de LabCar</a></li>
-        <li><a href="#">Eventos</a></li>
-        <li><a href="#">Desarrolladores</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Laboratoria</a></li>
-        <li><a href="#">Coders</a></li>
-      </ul>
-    </nav>
+          <!-- Lista de redes sociales -->
+          <nav class="nav-social col-xs-6 col-sm-3 col-sm-pull-6">
+            <ul class="list-unstyled">
+              <li ><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-play" aria-hidden="true"></i></a></li>
+            </ul>
+          </nav>
 
-    <nav>
-      <ul>
-        <li><a href="#"><img src="assets/images/appStore.png" alt="AppStore"></a></li>
-        <li><a href="#"><img src="assets/images/enBadgeWebGeneric.png" alt="Google Play"></a></li>
-      </ul>
-    </nav>
+          <!-- Nav de descargas AppStore y Google Play -->
+          <nav class="nav-download list-group col-xs-6 col-sm-3">
+            <ul class="list-unstyled">
+              <li class="list-group-item"><a href="#"><img src="assets/images/appStore.png" alt="AppStore"></a></li>
+              <li class="list-group-item"><a href="#"><img src="assets/images/enBadgeWebGeneric.png" alt="Google Play"></a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Fin de contenedor de navs -->
+      </div>
 
-    <hr>
-    <p>&copy; LabCar technologies Inc.</p>
+      <!-- Copyright -->
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <hr>
+        <span>&copy; LabCar technologies Inc.</span>
+      </div>
+      <!-- Fin copyright -->
+    </div>
   </footer>
+  <!-- Fin de pie de página -->
 
+  <!-- Scripts de funcionalidad -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
