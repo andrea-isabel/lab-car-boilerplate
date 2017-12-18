@@ -342,7 +342,7 @@ footer a:hover {
 }
 
 .modal-md {
-  width: 450px;
+  width: 95%;
 }
 
 .map-container {
@@ -366,6 +366,10 @@ footer a:hover {
 
   .nav li a {
     padding: 10px 30px;
+  }
+
+  .modal-md {
+    width: 450px;
   }
 }
 
