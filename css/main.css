@@ -275,6 +275,10 @@ section:nth-child(2n) {
   color: #fff;
 }
 
+#section-4 .form-group:last-child {
+  margin-bottom: 0;
+}
+
 footer {
   background-color: var(--dark-grey);
   padding-top: 10px;
@@ -341,6 +345,16 @@ footer a:hover {
   width: 450px;
 }
 
+.map-container {
+  height: 60vh;
+  margin: 60px 0;
+}
+
+#map {
+  height: 100%;
+  color: var(--dark-grey);
+}
+
 /* Breakpoint a partir de tablets  */
 @media (min-width: 768px) {
   .navbar-nav {
@@ -371,6 +385,10 @@ footer a:hover {
 
   #section-2 p {
     font-size: 1.55em;
+  }
+
+  .map-container {
+    margin: 50px 0;
   }
 
   footer {
