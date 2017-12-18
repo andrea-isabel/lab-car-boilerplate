@@ -247,7 +247,7 @@ section:nth-child(2n) {
 
 #section-3 {
   background-image: url('../assets/images/conduce.jpg');
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
