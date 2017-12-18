@@ -80,6 +80,15 @@ hr {
   color: #fff;
 }
 
+.btn-dark:hover {
+  background-color: #434343;
+  color: #fff;
+}
+
+.btn-dark:focus {
+  color: #fff;
+}
+
 .form-horizontal .form-group {
   margin-left: 0;
   margin-right: 0;
@@ -113,6 +122,10 @@ hr {
 
 .modal-header img {
   width: 20%;
+}
+
+.dropdown-menu li {
+  padding-left: 15px;
 }
 
 /* Helpers */
@@ -303,6 +316,29 @@ footer a:hover {
 .nav-download img {
   width: 100%;
   max-width: 190px;
+}
+
+.no-header {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.left-input {
+  padding-left: 0;
+  padding-right: 7.5px;
+}
+
+.right-input {
+  padding-left: 7.5px;
+  padding-right: 0;
+}
+
+.form-compact .form-group {
+  margin-bottom: 15px;
+}
+
+.modal-md {
+  width: 450px;
 }
 
 /* Breakpoint a partir de tablets  */
