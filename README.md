@@ -2,28 +2,26 @@
 
 ## Estructura
 
-Construir la web de LabCar utilizando el framework Bootstrap, trabajando bajo el sistema Mobile first y siguiendo la siguiente estructura.
+El proyecto consistió en la construcción de la web de LabCar utilizando el framework Bootstrap y trabajando bajo el sistema Mobile first.
 
 ### Versión móvil
 
-![](https://raw.githubusercontent.com/Laboratoria/curricula-js/f659ee55eeb322341c314d7d080bb22468e9a576/04-social-network/01-css-frameworks/08-code-challenges/images/movil.png)
+![](https://fotos.subefotos.com/ebb7d45ad0404b61997be05142c3acfeo.png)
 
 ### Versión de escritorio
 
-![](https://raw.githubusercontent.com/Laboratoria/curricula-js/f659ee55eeb322341c314d7d080bb22468e9a576/04-social-network/01-css-frameworks/08-code-challenges/images/desktop.png)
+![](https://fotos.subefotos.com/a6fa6b194851c0563d2844d2e6614750o.png)
 
-## Interacción
-
-Añadir los modales para Inicio de sesión, Registro y Conviértete en conductor.
+## Funcionalidad
 
 ### Modal Iniciar sesión
 
-![](https://raw.githubusercontent.com/Laboratoria/curricula-js/f659ee55eeb322341c314d7d080bb22468e9a576/04-social-network/01-css-frameworks/08-code-challenges/images/modal-inicio-sesion.png)
+![](https://fotos.subefotos.com/6bc143ec60110f9a027f1c0d6bb455d6o.png)
 
 ### Modal Registro
 
-![](https://raw.githubusercontent.com/Laboratoria/curricula-js/f659ee55eeb322341c314d7d080bb22468e9a576/04-social-network/01-css-frameworks/08-code-challenges/images/modal-registrate.png)
+![](https://fotos.subefotos.com/f5d232e95f74f6c2dcbbb77b7cd3d895o.png)
 
 ### Modal Conviértete en conductor
 
-![](https://raw.githubusercontent.com/Laboratoria/curricula-js/f659ee55eeb322341c314d7d080bb22468e9a576/04-social-network/01-css-frameworks/08-code-challenges/images/modal-conductor.png)
+![](https://fotos.subefotos.com/8a769addd7b9f2c6f391a796e86eb662o.png)
